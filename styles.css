@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0f1e 0%, #0c1222 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #8899bb;
+    font-size: 14px;
+}
+
+.button-group {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.group-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.green-title {
+    color: #00ff88;
+    border-left: 3px solid #00ff88;
+    padding-left: 12px;
+}
+
+.blue-title {
+    color: #00aaff;
+    border-left: 3px solid #00aaff;
+    padding-left: 12px;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* 🟢 গ্রিন বাটন ব্যাকগ্রাউন্ড */
+.btn-green {
+    background: linear-gradient(135deg, #00b86b 0%, #008f4f 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 200, 100, 0.3);
+}
+
+/* 🔵 ব্লু বাটন ব্যাকগ্রাউন্ড */
+.btn-blue {
+    background: linear-gradient(135deg, #1e6fdf 0%, #0a4daa 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(30, 111, 223, 0.3);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    color: #556688;
+    font-size: 12px;
+}
+
+.loading {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: #1e293b;
+    color: #00ff88;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+    z-index: 1000;
+}
+
+.loading.show {
+    display: block;
+}
