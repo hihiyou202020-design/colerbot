@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Premium Mail Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📧 Premium Mail Bot</h1>
+            <p>Select an option from below</p>
+        </div>
+
+        <!-- 🟢 গ্রিন গ্রুপ - ইমেইল অ্যাকশন -->
+        <div class="button-group">
+            <div class="group-title green-title">📧 EMAIL ACTIONS</div>
+            <button class="btn btn-green" onclick="sendAction('send_email')">
+                🚀 Send HTML Email
+            </button>
+            <button class="btn btn-green" onclick="sendAction('add_email')">
+                ➕ Add Email Account
+            </button>
+            <button class="btn btn-green" onclick="sendAction('my_emails')">
+                📋 My Emails
+            </button>
+        </div>
+
+        <!-- 🔵 ব্লু গ্রুপ - তথ্য ও সেটিংস -->
+        <div class="button-group">
+            <div class="group-title blue-title">⚙️ INFO & SETTINGS</div>
+            <button class="btn btn-blue" onclick="sendAction('help')">
+                🛟 Help / Instructions
+            </button>
+            <button class="btn btn-blue" onclick="sendAction('start')">
+                🏠 Home / Start
+            </button>
+        </div>
+
+        <!-- 👑 অ্যাডমিন বাটন (শুধু এডমিন দেখবে) -->
+        <div class="button-group" id="adminGroup" style="display: none;">
+            <div class="group-title green-title">👑 ADMIN PANEL</div>
+            <button class="btn btn-green" onclick="sendAction('admin')">
+                👑 Admin Dashboard
+            </button>
+        </div>
+
+        <div class="footer">
+            <p>👨‍💻 Bot Creator: @Anik7660</p>
+        </div>
+    </div>
+
+    <div id="loading" class="loading">
+        ⏳ Processing... Please wait
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
